@@ -1,0 +1,350 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    
+    header{
+        #menu{
+
+            height: 70px;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed ;
+            width: 100%;
+            z-index: 100000;
+            top: 0;
+            #logo1{
+                img{
+                    width: 70px;
+                    margin-left: 20px;
+                    margin-top: 5px;
+                }
+            }
+            ul{
+                display: flex;
+                width: 1000px;
+                margin-left: 40%;
+                font-family: roboto;
+                li{
+                    flex: 1;
+                    display: flex;
+                        a{
+                            display: flex; 
+                            justify-content: center;
+                            align-items: center;    
+                            color: white;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            color: #AAF4F0;
+                        }
+                        #Btickets{
+                            background-color: #AAF4F0;
+                            border-radius: 20px;
+                            color: black;   
+                            height: 50%;
+                            margin-top: 20px;
+                            margin-left: 10px;
+                            width: 130px;
+                        } 
+                        #Btickets:hover{
+                                background-color: #85cac7;
+                                            }
+                }
+            }
+        }
+        
+        .burger{
+            display: none;
+           position: fixed;
+           z-index: 100;
+           margin-top: 20px;
+           margin-left: 5px;
+           width: 100px;
+           height: 100px;
+            cursor: pointer;
+
+           div{
+               margin-left: 10px;
+               width: 80%;
+               height: 3px;
+               background-color: #AAF4F0;
+               margin-top: 5px;
+           }
+        }
+        
+        .menu{
+           position: fixed;
+           z-index: 99;
+           top: 0;
+           left: 0;
+           width: 120px;
+           height: 100%;
+           display: none;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           background: black;
+        
+           font-size: 20px;
+           line-height: 50px;
+        }
+    }
+   
+    
+    
+    
+    .menu a{
+       color: white;
+       text-decoration: none;
+       font-family: roboto;
+    }
+    .socials{
+       position: fixed;
+       z-index: 100;
+       right: 0;
+       bottom: 0;
+       display: none;
+    }
+    .socials a{
+       display: block;
+    }
+    .menuOpened .menu{
+       display: flex;
+    }
+    .menuOpened .socials{
+       display: block;
+    }
+    
+    #logo2{
+        text-align: center;
+        padding-top: 25vh;
+        scale: 100%;
+        
+    }
+    
+   .Hbouton{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+   }
+    
+    #Mbutton{
+        color: black;
+        background-color: #AAF4F0;
+        border: none;
+        width: 250px;
+        height: 80px;
+        border-radius: 10px;
+        margin-top: 10vh;
+        font-size: 150%;
+        font-family: roboto;
+       text-align: center;
+        cursor: pointer;
+    }
+
+    #Mbutton:hover{
+        background-color:#85cac7;
+    }
+
+    #ligne{
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        z-index: 100;
+        background-position: center;
+        background-size:cover;
+    }
+    
+    
+    
+    #presentation{
+        position: relative;
+        margin: auto;
+        width: 80vw;
+        background-color: rgba(0, 0, 0, 0.70);
+    }
+    
+    #presentation p{
+        color: #AAF4F0;
+        margin-top: 35vh;
+        text-align: center;
+        font-family: pacifico;
+        letter-spacing: 2px;
+        padding-bottom: 10vh;
+    }
+    
+    footer{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        
+        margin-top: 10vh;
+        color: white;
+        font-family: roboto;
+        text-align: center;
+       
+        background-color: #121212;
+        .footer_container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+            height: 100%;
+            .social,.mail,.partenaires{  
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                h2{
+                    font-size: 20px;
+                }
+                .container{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 60%;
+                    position: relative;
+                    left:50%;
+                    transform: translateX(-50%);
+                    padding-top: 20px;
+                    a {
+                        text-decoration: none;
+                        i{
+                            color:white;
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+            .social{
+                grid-area: 1 / 1 / 1 / 2;
+            }
+            .mail{
+                grid-area: 1 / 2 / 1 / 3;
+            }
+            .partenaires{
+                grid-area: 1 / 3 / 1 / 4;
+            }
+            p{
+                grid-area: 2 / 1 / 2 / 4;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+   
+    
+
+    
+    @media screen and (max-width: 1200px){
+        #menu ul{
+            display: flex;
+            width: 600px;
+            margin-left: 40% ;
+            font-family: roboto;
+        }
+        
+    }
+
+    @media screen and (max-width: 950px){
+        footer .container #réseaux{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            text-align: center;
+            
+            background-color: #121212;
+            width: 100vw;
+            top: 0;
+            }
+        footer .container #contact{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            text-align: center;
+            
+            background-color: #121212;
+            width: 100vw;
+            top: 0;
+                
+                }
+        footer .container #partenaires{ 
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            text-align: center;
+            background-color: #121212;
+            width: 100vw;
+        }
+
+        #menu ul{
+            display: flex;
+            width: 500px;
+            margin-left: 20% ;
+            font-family: roboto;
+            
+        
+        }
+        header .burger{
+            display: block;
+            position: fixed;
+            width: 40px;
+            height: 60px;
+            top: 0;
+            left: 0;
+        }
+    
+        header #menu{
+            display: none;
+        }
+    }    
+    @media screen and (max-width: 700px){
+        
+       
+        #logo2{
+            scale: 40%;
+        }
+        #Mbutton{
+            margin-top: 15vh;
+        }
+        
+        #ligne{
+        display: none;
+        
+        }
+        footer{
+            height: auto;
+            .footer_container{
+                padding-top:5vh;
+                padding-bottom: 2vh;
+                grid-gap:2rem;
+                .social,.mail,.partenaires{  
+                    .container{
+                        padding-top: 10px;
+                    }
+                }
+                .social{
+                    grid-area: 1 / 1 / 2 / 4;
+                }
+                .mail{
+                    grid-area: 2 / 1 / 3 / 4;
+                }
+                .partenaires{
+                    grid-area: 3 / 1 / 4 / 4;
+                }
+                p{
+                    grid-area: 4 / 1 / 5 / 4;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        
+    }
+     
+      
+    

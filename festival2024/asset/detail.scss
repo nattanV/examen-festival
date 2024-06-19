@@ -1,0 +1,126 @@
+#pres{
+    width: 70vw;
+    height: 70vh;
+    background-color: black;
+    margin: auto;
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    font-family: roboto;
+}
+
+#pres img{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: auto;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+
+#pres h1{
+    color: #AAF4F0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: right;
+    margin-right: 10vw;
+    margin-top: 10px;
+    font-size: 400%;
+}
+#pres p1{
+    margin-top: 8vh;
+    margin-right: 10vw;
+    text-align: right;
+    font-size: 150%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: #FDF097;
+}
+#pres p2{
+    text-align: right;
+    margin-right: 10vw;
+    font-size: 150%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    color: #FDF097;
+}
+#pres p3{
+    text-align: right;
+    margin-right: 10vw;
+    font-size: 150%;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    color: white;
+}
+
+#pres div  {
+    text-align: right;
+    margin-right: 10vw;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    
+}
+
+#pres div a i{
+    color: white;
+    margin: 10px;
+    font-size: 35px;
+
+}
+
+@media screen and (max-width: 950px){
+    #pres{
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 12% 12% 12% 12% 12%;
+        
+    }
+    #pres img{
+        display: grid;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        margin: auto;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #pres h1{
+       margin: auto;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+        font-size: 200%;
+    }
+    #pres p1{
+        margin: auto;
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin-bottom: 20px;
+        
+    }
+    #pres p2{
+        margin: auto;
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        
+    }
+    #pres p3{
+        margin: auto;
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    
+    }
+    #pres div  {
+        margin: auto;
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+}

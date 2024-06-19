@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+<header>
+    <nav id="menu">
+        <nav id="logo1">
+            <img src="../asset/images/logo1.png" alt="logo1">
+        </nav>
+        
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../line-up.html">Line-up</a></li>
+                <li><a href="../tickets.html">Tickets</a></li>
+                <li><a href="../questions.html">Questions</a></li>
+                <li><a href="../tickets.html" id="Btickets">Tickets</a></li>
+            </ul>
+        
+    </nav>
+
+
+    <div class="header">
+        <nav class="nburger">
+        <div class="burger">
+            <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../line-up.html">Line-up</a>
+                <a href="../tickets.html">Tickets</a>
+                <a href="../questions.html">Questions</a>
+            </div>
+        </nav>
+    </div>
+
+    <script type="text/javascript">
+
+        const burger = document.querySelector('.burger');
+        
+        burger.addEventListener('click', () => {
+            document.body.classList.toggle('menuOpened');
+        });
+
+    </script>
+</header>
+</head>
+<body>
+    <div id="pres">
+        <img src="../artistes/mentissa.webp" alt="alex">
+        <p1>samedi 13 juillet</p1>
+        <p2>POP</p2>
+        <p3>Artiste Français</p3>
+        <h1>Mentissa</h1>
+        <div>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-spotify"></i></a></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="social">
+            <h2>suivez-nous:</h2>
+            <div class="container">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="mail">
+            <h2>contact:</h2>
+            <div class="container">
+                <p>Festivale.FEMU@gmail.com</p>
+            </div>
+        </div>
+        <div class="partenaires">
+            <h2>partenaires:</h2>
+            <div class="container">
+                <a href=""><i class="fa-brands fa-spotify"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </div>
+        <p>Site fictif réalisé dans le cadre d’un exercice scolaire </p>
+    </div>
+</footer>
+</html>

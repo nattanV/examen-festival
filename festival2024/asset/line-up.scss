@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+
+#titre{
+    
+    color: #AAF4F0;
+    text-align: center;
+    padding-top: 10vh;
+    cursor: default;
+    font-family: pacifico;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+}
+
+#titre #ligne{
+    background-color: #AAF4F0;
+    display: block;
+    width: 50%;
+    height: 5px;
+    margin-left: 25%;
+    border-radius: 4px;
+}
+
+#artistes{
+    height: auto;
+    width: auto;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+.Bcontainer{
+    position: relative;
+    display: grid;
+    grid-template-columns:  400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 400px;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 12vh;
+    height: 100%;
+    grid-auto-flow: dense;
+    gap: 30px;
+    ;
+    
+}
+
+.Bcontainer li{   
+    list-style: none;
+}
+.Bcontainer li img{
+    display: grid;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: auto;
+    transition: all 0.3s ease-out;
+    ;
+    // border-radius: 100%;
+}
+
+.Bcontainer li:hover img{
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.678);
+    
+}
+
+@media screen and (max-width: 1300px){
+    .Bcontainer{
+        display: grid;
+        grid-template-columns:  300px 300px ;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+     
+        margin-top: 15vh;
+    }
+    .Bcontainer li img{
+        width: 200px;
+        height: 200px;
+        
+        // border-radius: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .Bcontainer{
+        display: grid;
+        grid-template-columns:  200px ;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    }
+    #titre{
+        font-size: 1.2rem;
+    }
+}

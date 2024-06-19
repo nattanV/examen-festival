@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FE-MU</title>
+</head>
+<!-- icones windows -->
+<link rel="icon" type="image/png" href="asset/images/lilogo16.png" sizes="16x16"> 
+<link rel="icon" type="image/png" href="asset/images/lilogo32.png" sizes="32x32"> 
+<!-- icone racourcie safari -->
+<link rel="mask-icon" href="asset/images/lilogo16.png" color="#ffffff">
+<!-- open-graph -->
+ <!-- open-graph -->
+<meta property="og:title" content="FE-MU">
+<meta property="og:type" content="website">
+<meta property="og:image" content="asset/images/lilogo32.png">
+<meta property="og:image:width" content="1650"> <meta property="og:image:height" content="484">
+<meta property="og:url" content="http://versnick-nattan.be/"> 
+<meta property="og:description" content=" le Festival de la Musique Éclectique et Universelle, qui se déroulera le 13 et 14 juillet à Silly ">
+<!-- open-graph fa-x-twitter -->
+<!-- <meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="http://alexandre-boutry.be/">
+<meta name="twitter:title" content="SillyJazz">
+<meta name="twitter:description" content="Rejoignez le Festival de Jazz Évasion 2024 à Silly pour trois jours de musique envoûtante, d'activités interactives et de gastronomie savoureuse dans un cadre accueillant et inclusif.">
+<meta name="twitter:image" content="http://alexandre-boutry.be/images/icons/icon-128x128_background.svg"> -->
+
+
+<header>
+    <nav id="menu">
+        <nav id="logo1">
+            <img src="asset/images/logo1.png" alt="logo1">
+        </nav>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="line-up.html">Line-up</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="questions.html">Questions</a></li>
+            <li><a href="tickets.html" id="Btickets">Tickets</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <nav class="nburger">
+        <div class="burger">
+            <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="line-up.html">Line-up</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="questions.html">Questions</a>
+            </div>
+        </nav>
+    </div>
+
+    <script type="text/javascript">
+
+        const burger = document.querySelector('.burger');
+        
+        burger.addEventListener('click', () => {
+            document.body.classList.toggle('menuOpened');
+        });
+
+    </script>
+    
+</header>
+
+<body>
+    <div id="titre">
+        <h1>Tickets</h1> 
+        <div id="ligne"></div>
+    </div>
+    <div id="tickets">
+        <div id="troistickets" class="bcontainer">
+            <div id="tc">
+                <p1>tickets classiques : </p1>
+                <p2> 20€ / jour </p2><br>
+                <button class="addticket">Ajouter ticket</button>
+                <div id="bligne"></div>
+            </div>
+            <div id="te">
+                <p1>tickets enfant : </p1>
+                <p2> 17€ / jour</p2><br>
+                <button class="addticket">Ajouter ticket</button>
+                <div id="bligne"></div>
+            </div>
+            <div id="tf">
+                <p1>tickets famille : </p1>
+                <p2> 15€ / jour</p2><br>
+                <button class="addticket">Ajouter ticket</button>
+                <div id="bligne"></div>
+            </div>
+            <button id="valider">finaliser ma commande</button>
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="social">
+            <h2>suivez-nous:</h2>
+            <div class="container">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="mail">
+            <h2>contact:</h2>
+            <div class="container">
+                <p>Festivale.FEMU@gmail.com</p>
+            </div>
+        </div>
+        <div class="partenaires">
+            <h2>partenaires:</h2>
+            <div class="container">
+                <a href=""><i class="fa-brands fa-spotify"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </div>
+        <p>Site fictif réalisé dans le cadre d’un exercice scolaire </p>
+    </div>
+</footer>
+</html>
